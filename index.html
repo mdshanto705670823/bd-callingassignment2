@@ -21,6 +21,13 @@
       .font {
         font-family: "Josefin Sans", sans-serif;
       }
+      .roated-image {
+        background-image: url("assets/roated_banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scaleX(-1);
+      }
     </style>
 
     <title>assignment 2</title>
@@ -80,7 +87,7 @@
 
       <!-- banner-section -->
       <div
-        class="bg-[url(assets/banner.png)] bg-cover bg-no-repeat min-w-fi min-h-screen md:relative flex items-center justify-center md:flex-none md:justify-normal"
+        class="bg-[url(assets/banner.png)] bg-center bg-cover bg-no-repeat min-h-screen md:relative flex items-center justify-center md:flex-none md:justify-normal"
       >
         <div
           class="md:absolute top-40 md:w-[450px] w-full mx-2 md:mx-auto flex flex-col items-center justify-center gap-32"
@@ -121,76 +128,82 @@
         <i class="fa-brands fa-youtube md:text-4xl text-lg"></i>
       </div>
       <!-- Plans section -->
-      <div class="min-h-screen">
-        <h1 class="md:text-5xl text-2xl mb-20 font-bold">
-          Fitness Plans & <span class="text-[#FF921B]">Nutritions</span>
-        </h1>
-        <div class="cards grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-          <div
-            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B] lg:border-b-1 lg:border-b-[#FF921B]"
-          >
-            <i class="fa-solid fa-dumbbell text-5xl"></i>
-            <h1 class="text-xl">Weight Loss</h1>
-            <p class="text-xs text-[#FFFFFF80]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-              doloribus harum minima veritatis dolorem nobis maxime ab hic et
-              mollitia delectus,
-            </p>
-          </div>
-          <div
-            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B] lg:border-b-1 lg:border-b-[#FF921B]"
-          >
-            <i class="fas fa-running text-5xl"></i>
-            <h1 class="text-xl">Walking</h1>
-            <p class="text-xs text-[#FFFFFF80]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-              doloribus harum minima veritatis dolorem nobis maxime ab hic et
-              mollitia delectus,
-            </p>
-          </div>
-          <div
-            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-b-1 lg:border-b-[#FF921B]"
-          >
-            <i class="fa-solid fa-person-biking text-5xl"></i>
-            <h1 class="text-xl">Cycling</h1>
-            <p class="text-xs text-[#FFFFFF80]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-              doloribus harum minima veritatis dolorem nobis maxime ab hic et
-              mollitia delectus,
-            </p>
-          </div>
-          <div
-            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B]"
-          >
-            <i class="fa-solid fa-child-reaching text-5xl"></i>
-            <h1 class="text-xl">Body building</h1>
-            <p class="text-xs text-[#FFFFFF80]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-              doloribus harum minima veritatis dolorem nobis maxime ab hic et
-              mollitia delectus,
-            </p>
-          </div>
-          <div
-            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B]"
-          >
-            <i class="fa-solid fa-dumbbell text-5xl"></i>
-            <h1 class="text-xl">Musculation</h1>
-            <p class="text-xs text-[#FFFFFF80]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-              doloribus harum minima veritatis dolorem nobis maxime ab hic et
-              mollitia delectus,
-            </p>
-          </div>
-          <div
-            class="card flex flex-col items-center justify-center gap-8 p-6 text-center"
-          >
-            <i class="fas fa-running text-5xl"></i>
-            <h1 class="text-xl">Running</h1>
-            <p class="text-xs text-[#FFFFFF80]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-              doloribus harum minima veritatis dolorem nobis maxime ab hic et
-              mollitia delectus,
-            </p>
+      <div
+        class="transform scale-x-[-1] bg-[url(assets/roated_banner.png)] bg-center bg-cover bg-no-repeat"
+      >
+        <div
+          class="bg-black/50 transform scale-x-[-1] min-h-screen md:relative flex flex-col items-center justify-center md:flex-none md:justify-normal"
+        >
+          <h1 class="md:text-5xl text-2xl mb-20 font-bold">
+            Fitness Plans & <span class="text-[#FF921B]">Nutritions</span>
+          </h1>
+          <div class="cards grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+            <div
+              class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B] lg:border-b-1 lg:border-b-[#FF921B]"
+            >
+              <i class="fa-solid fa-dumbbell text-5xl"></i>
+              <h1 class="text-xl">Weight Loss</h1>
+              <p class="text-xs text-[#FFFFFF80]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis doloribus harum minima veritatis dolorem nobis maxime ab
+                hic et mollitia delectus,
+              </p>
+            </div>
+            <div
+              class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B] lg:border-b-1 lg:border-b-[#FF921B]"
+            >
+              <i class="fas fa-running text-5xl"></i>
+              <h1 class="text-xl">Walking</h1>
+              <p class="text-xs text-[#FFFFFF80]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis doloribus harum minima veritatis dolorem nobis maxime ab
+                hic et mollitia delectus,
+              </p>
+            </div>
+            <div
+              class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-b-1 lg:border-b-[#FF921B]"
+            >
+              <i class="fa-solid fa-person-biking text-5xl"></i>
+              <h1 class="text-xl">Cycling</h1>
+              <p class="text-xs text-[#FFFFFF80]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis doloribus harum minima veritatis dolorem nobis maxime ab
+                hic et mollitia delectus,
+              </p>
+            </div>
+            <div
+              class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B]"
+            >
+              <i class="fa-solid fa-child-reaching text-5xl"></i>
+              <h1 class="text-xl">Body building</h1>
+              <p class="text-xs text-[#FFFFFF80]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis doloribus harum minima veritatis dolorem nobis maxime ab
+                hic et mollitia delectus,
+              </p>
+            </div>
+            <div
+              class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B]"
+            >
+              <i class="fa-solid fa-dumbbell text-5xl"></i>
+              <h1 class="text-xl">Musculation</h1>
+              <p class="text-xs text-[#FFFFFF80]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis doloribus harum minima veritatis dolorem nobis maxime ab
+                hic et mollitia delectus,
+              </p>
+            </div>
+            <div
+              class="card flex flex-col items-center justify-center gap-8 p-6 text-center"
+            >
+              <i class="fas fa-running text-5xl"></i>
+              <h1 class="text-xl">Running</h1>
+              <p class="text-xs text-[#FFFFFF80]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis doloribus harum minima veritatis dolorem nobis maxime ab
+                hic et mollitia delectus,
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -319,10 +332,14 @@
           </div>
           <div class="relative">
             <div class="">
-              <img class="ml-2 md:ml-auto" src="assets/join_us_01.png" alt="" />
+              <img
+                class="ml-2 md:ml-auto w-32 md:w-full"
+                src="assets/join_us_01.png"
+                alt=""
+              />
             </div>
             <div
-              class="absolute right-10 top-64 md:-right-10 lg:-right-24 lg:-bottom-48"
+              class="absolute w-32 md:w-full right-20 top-44 md:right-44 md:top-64 lg:-right-24 lg:-bottom-48"
             >
               <img class="" src="assets/join_us_02.png" alt="" />
             </div>
@@ -333,32 +350,35 @@
     <!-- footer section -->
     <footer>
       <div class="container mx-auto">
-        <div class="flex justify-between">
-          <div class="logo flex flex-col items-center md:gap-2 lg:gap-3">
-            <div class="flex items-center md:gap-2 lg:gap-3">
-              <img
-                class="w-5 h-3 md:w-7 md:h-5"
-                src="assets/logo_left.png"
-                alt=""
-              />
-              <div class="flex flex-col items-center">
-                <h1
-                  class="lg:text-3xl md:text-xl bg-gradient-to-l from-[#f66844] to-[#ff911b] bg-clip-text text-transparent"
-                >
-                  Bodyshape
-                </h1>
+        <div class="mt-40 flex flex-col md:flex-row md:justify-between">
+          <div class="flex flex-col items-center justify-center">
+            <div class="logo flex flex-col items-center md:gap-2 lg:gap-3">
+              <div class="flex items-center md:gap-2 lg:gap-3">
+                <img
+                  class="w-5 h-3 md:w-7 md:h-5"
+                  src="assets/logo_left.png"
+                  alt=""
+                />
+                <div class="flex flex-col items-center">
+                  <h1
+                    class="lg:text-3xl md:text-xl bg-gradient-to-l from-[#f66844] to-[#ff911b] bg-clip-text text-transparent"
+                  >
+                    Bodyshape
+                  </h1>
+                </div>
+                <img
+                  class="w-5 h-3 md:w-7 md:h-5"
+                  src="assets/logo_right.png"
+                  alt=""
+                />
               </div>
-              <img
-                class="w-5 h-3 md:w-7 md:h-5"
-                src="assets/logo_right.png"
-                alt=""
-              />
+              <p
+                class="bg-gradient-to-l from-[#f66844] to-[#ff911b] bg-clip-text text-transparent text-xs"
+              >
+                Unleash your inner athlete
+              </p>
             </div>
-            <p
-              class="bg-gradient-to-l from-[#f66844] to-[#ff911b] bg-clip-text text-transparent text-xs"
-            >
-              Unleash your inner athlete
-            </p>
+            <h1>Support Your Need To Much Fitness Goal</h1>
           </div>
           <div class="company flex flex-col gap-6">
             <h1>Company</h1>
