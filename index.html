@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn for tailwind.css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/fede9e4808.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .font {
+        font-family: "Josefin Sans", sans-serif;
+      }
+    </style>
+
+    <title>assignment 2</title>
+  </head>
+  <body class="font bg-black text-white">
+    <!-- color code: #F66844 #FF921B -->
+    <!-- navbar -->
+    <div class="container mx-auto">
+      <!-- right nav-items -->
+      <div class="flex justify-between mx-4 md:mx-auto">
+        <div class="logo flex flex-col items-center md:gap-2 lg:gap-3">
+          <div class="flex items-center md:gap-2 lg:gap-3">
+            <img
+              class="w-5 h-3 md:w-7 md:h-5"
+              src="assets/logo_left.png"
+              alt=""
+            />
+            <div class="flex flex-col items-center">
+              <h1
+                class="lg:text-3xl md:text-xl bg-gradient-to-l from-[#f66844] to-[#ff911b] bg-clip-text text-transparent"
+              >
+                Bodyshape
+              </h1>
+            </div>
+            <img
+              class="w-5 h-3 md:w-7 md:h-5"
+              src="assets/logo_right.png"
+              alt=""
+            />
+          </div>
+          <p
+            class="bg-gradient-to-l from-[#f66844] to-[#ff911b] bg-clip-text text-transparent text-xs"
+          >
+            Unleash your inner athlete
+          </p>
+        </div>
+        <!-- left nav-items -->
+        <div class="nav-items flex items-center justify-between gap-8">
+          <div
+            class="md:flex justify-between items-center gap-8 text-2xl hidden"
+          >
+            <a class="border-b-[#F66844] border-b-2" href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">About</a>
+            <a href="#">Contacts</a>
+          </div>
+          <button
+            class="bg-gradient-to-r from-[#F66844] to-[#FF921B] py-2 px-3 text-white text-xl hidden md:block"
+          >
+            Join Us
+          </button>
+          <div class="md:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- banner-section -->
+      <div
+        class="bg-[url(assets/banner.png)] bg-cover bg-no-repeat min-w-fi min-h-screen md:relative flex items-center justify-center md:flex-none md:justify-normal"
+      >
+        <div
+          class="md:absolute top-40 md:w-[450px] w-full mx-2 md:mx-auto flex flex-col items-center justify-center gap-32"
+        >
+          <div class="">
+            <h1 class="text-5xl font-bold">Transform Your Body</h1>
+            <p class="text-[#FFFFFF80]">
+              We are dedicated to helping you transform your body and mind
+              through the power of fitness.
+            </p>
+          </div>
+          <div
+            class="flex md:justify-between justify-center gap-10 md:text-lg w-full"
+          >
+            <button
+              class="bg-gradient-to-r from-[#F66844] to-[#FF921B] px-2 py-1 md:px-10 md:py-[9px]"
+            >
+              Get started
+            </button>
+            <button
+              class="p-[2px] bg-gradient-to-r from-[#F66844] to-[#FF921B]"
+            >
+              <div
+                class="bg-black px-2 py-2 md:px-9 md:py-2 flex items-center justify-center gap-3"
+              >
+                <i class="fa-solid fa-circle-play"></i>
+                <h1>Watch Reviews</h1>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center gap-6 absolute left-0 bottom-0 w-[150px] md:w-[240px] md:h-[60px] h-[40px] bg-gradient-to-r from-orange-500 to-red-500 [clip-path:polygon(0%_0%,100%_0%,90%_100%,0%_100%)] text-white text-3xl"
+      >
+        <i class="fa-brands fa-google md:text-4xl text-lg"></i>
+        <i class="fa-brands fa-facebook-f md:text-4xl text-lg"></i>
+        <i class="fa-brands fa-youtube md:text-4xl text-lg"></i>
+      </div>
+      <!-- Plans section -->
+      <div class="min-h-screen">
+        <h1 class="md:text-5xl text-2xl mb-20 font-bold">
+          Fitness Plans & <span class="text-[#FF921B]">Nutritions</span>
+        </h1>
+        <div class="cards grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+          <div
+            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B] lg:border-b-1 lg:border-b-[#FF921B]"
+          >
+            <i class="fa-solid fa-dumbbell text-5xl"></i>
+            <h1 class="text-xl">Weight Loss</h1>
+            <p class="text-xs text-[#FFFFFF80]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              doloribus harum minima veritatis dolorem nobis maxime ab hic et
+              mollitia delectus,
+            </p>
+          </div>
+          <div
+            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B] lg:border-b-1 lg:border-b-[#FF921B]"
+          >
+            <i class="fas fa-running text-5xl"></i>
+            <h1 class="text-xl">Walking</h1>
+            <p class="text-xs text-[#FFFFFF80]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              doloribus harum minima veritatis dolorem nobis maxime ab hic et
+              mollitia delectus,
+            </p>
+          </div>
+          <div
+            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-b-1 lg:border-b-[#FF921B]"
+          >
+            <i class="fa-solid fa-person-biking text-5xl"></i>
+            <h1 class="text-xl">Cycling</h1>
+            <p class="text-xs text-[#FFFFFF80]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              doloribus harum minima veritatis dolorem nobis maxime ab hic et
+              mollitia delectus,
+            </p>
+          </div>
+          <div
+            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B]"
+          >
+            <i class="fa-solid fa-child-reaching text-5xl"></i>
+            <h1 class="text-xl">Body building</h1>
+            <p class="text-xs text-[#FFFFFF80]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              doloribus harum minima veritatis dolorem nobis maxime ab hic et
+              mollitia delectus,
+            </p>
+          </div>
+          <div
+            class="card flex flex-col items-center justify-center gap-8 p-6 text-center lg:border-r-1 lg:border-r-[#FF921B]"
+          >
+            <i class="fa-solid fa-dumbbell text-5xl"></i>
+            <h1 class="text-xl">Musculation</h1>
+            <p class="text-xs text-[#FFFFFF80]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              doloribus harum minima veritatis dolorem nobis maxime ab hic et
+              mollitia delectus,
+            </p>
+          </div>
+          <div
+            class="card flex flex-col items-center justify-center gap-8 p-6 text-center"
+          >
+            <i class="fas fa-running text-5xl"></i>
+            <h1 class="text-xl">Running</h1>
+            <p class="text-xs text-[#FFFFFF80]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              doloribus harum minima veritatis dolorem nobis maxime ab hic et
+              mollitia delectus,
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- subscibe section -->
+      <div class="min-h-screen">
+        <h1 class="md:text-5xl text-2xl mb-30 font-bold">
+          Subscribe To <span class="text-[#FF921B]">Plans</span>
+        </h1>
+        <div
+          class="plans grid md:grid-cols-3 grid-cols-1 gap-5 justify-items-center"
+        >
+          <div
+            class="plan box-border flex flex-col justify-center items-center gap-5 w-44 shadow-2xl border p-4 border-gray-400"
+          >
+            <h1 class="text-2xl">Fit</h1>
+            <p class="text-sm text-[#FFFFFF80]">Plan Exp. 16/11/2025</p>
+            <h1 class="text-2xl">
+              $1200 / <span class="text-[#FFFFFF80] text-lg">Month</span>
+            </h1>
+            <p class="text-sm text-[#FFFFFF80]">Streaming</p>
+            <button
+              class="p-[1px] bg-gradient-to-r from-[#F66844] to-[#FF921B]"
+            >
+              <div
+                class="bg-black px-2 py-2 md:px-5 md:py-1 flex items-center justify-center gap-3"
+              >
+                <h1>Select Plan</h1>
+              </div>
+            </button>
+          </div>
+          <span class="md:relative flex flex-col gap-2">
+            <h1
+              class="md:absolute -top-20 -right-10 bg-white text-black py-1 md:px-2 text-center rounded-sm hidden md:block"
+            >
+              Recomanded
+            </h1>
+            <div
+              class="plan box-border flex flex-col justify-center items-center gap-5 w-44 shadow-2xl md:absolute bottom-7 -right-19 border p-4 border-gray-400"
+            >
+              <h1 class="bg-white text-black p-1 rounded-sm md:hidden">
+                Recomanded
+              </h1>
+              <h1 class="text-2xl">Fit</h1>
+              <p class="text-sm text-[#FFFFFF80]">Plan Exp. 16/11/2025</p>
+              <h1 class="text-2xl">
+                $1200 / <span class="text-[#FFFFFF80] text-lg">Month</span>
+              </h1>
+              <p class="text-sm text-[#FFFFFF80]">Streaming</p>
+              <button
+                class="p-[1px] bg-gradient-to-r from-[#F66844] to-[#FF921B]"
+              >
+                <div
+                  class="bg-black px-2 py-2 md:px-5 md:py-1 flex items-center justify-center gap-3"
+                >
+                  <h1>Select Plan</h1>
+                </div>
+              </button>
+            </div>
+          </span>
+          <div
+            class="plan box-border flex flex-col justify-center items-center gap-5 w-44 shadow-2xl border p-4 border-gray-400"
+          >
+            <h1 class="text-2xl">Fit</h1>
+            <p class="text-sm text-[#FFFFFF80]">Plan Exp. 16/11/2025</p>
+            <h1 class="text-2xl">
+              $1200 / <span class="text-[#FFFFFF80] text-lg">Month</span>
+            </h1>
+            <p class="text-sm text-[#FFFFFF80]">Streaming</p>
+            <button
+              class="p-[1px] bg-gradient-to-r from-[#F66844] to-[#FF921B]"
+            >
+              <div
+                class="bg-black px-2 py-2 md:px-5 md:py-1 flex items-center justify-center gap-3"
+              >
+                <h1>Select Plan</h1>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- trainer-section -->
+      <div class="min-h-screen">
+        <h1 class="md:text-5xl text-2xl my-15 font-bold">
+          Join Out <span class="text-[#FF921B]">Trainer</span>
+        </h1>
+        <div
+          class="trainers grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-0 grid-cols-1 gap-8 justify-items-center items-center"
+        >
+          <img src="assets/trainer_01.png" alt="" />
+          <img src="assets/trainer_02.png" alt="" />
+          <img src="assets/trainer_03.png" alt="" />
+        </div>
+      </div>
+      <!-- joining-section -->
+      <div class="min-h-screen">
+        <h1 class="md:text-5xl text-2xl mb-15 font-bold">
+          Why Join With <span class="text-[#FF921B]">Us?</span>
+        </h1>
+        <div
+          class="flex md:flex-row md:gap-20 flex-col gap-12 md:justify-around md:items-center"
+        >
+          <div class="flex flex-col gap-12 items-start">
+            <div class="flex flex-col ml-15 gap-5">
+              <div class="flex items-center justify-items-center gap-6">
+                <i class="fa-solid fa-circle text-xs text-[#FF921B]"></i>
+                <h1 class="text-xl">Best Gym</h1>
+              </div>
+              <div class="flex items-center justify-items-center gap-6">
+                <i class="fa-solid fa-circle text-xs text-[#FF921B]"></i>
+                <h1 class="text-xl">Experts Coach</h1>
+              </div>
+              <div class="flex items-center justify-items-center gap-6">
+                <i class="fa-solid fa-circle text-xs text-[#FF921B]"></i>
+                <h1 class="text-xl">Good Workout Facilities</h1>
+              </div>
+              <div class="flex items-center justify-items-center gap-6">
+                <i class="fa-solid fa-circle text-xs text-[#FF921B]"></i>
+                <h1 class="text-xl">Consultation With Experts</h1>
+              </div>
+            </div>
+            <button
+              class="bg-gradient-to-r from-[#F66844] to-[#FF921B] px-2 py-1 md:px-10 md:py-[9px]"
+            >
+              See More Benifits
+            </button>
+          </div>
+          <div class="relative">
+            <div class="">
+              <img class="ml-2 md:ml-auto" src="assets/join_us_01.png" alt="" />
+            </div>
+            <div
+              class="absolute right-10 top-64 md:-right-10 lg:-right-24 lg:-bottom-48"
+            >
+              <img class="" src="assets/join_us_02.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer>
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="logo flex flex-col items-center md:gap-2 lg:gap-3">
+            <div class="flex items-center md:gap-2 lg:gap-3">
+              <img
+                class="w-5 h-3 md:w-7 md:h-5"
+                src="assets/logo_left.png"
+                alt=""
+              />
+              <div class="flex flex-col items-center">
+                <h1
+                  class="lg:text-3xl md:text-xl bg-gradient-to-l from-[#f66844] to-[#ff911b] bg-clip-text text-transparent"
+                >
+                  Bodyshape
+                </h1>
+              </div>
+              <img
+                class="w-5 h-3 md:w-7 md:h-5"
+                src="assets/logo_right.png"
+                alt=""
+              />
+            </div>
+            <p
+              class="bg-gradient-to-l from-[#f66844] to-[#ff911b] bg-clip-text text-transparent text-xs"
+            >
+              Unleash your inner athlete
+            </p>
+          </div>
+          <div class="company flex flex-col gap-6">
+            <h1>Company</h1>
+            <div>
+              <h1>About</h1>
+              <h1>Careers</h1>
+              <h1>Blogs</h1>
+            </div>
+          </div>
+          <div class="Contact flex flex-col gap-6">
+            <h1>Contact</h1>
+            <div>
+              <h1>Help/FAQ</h1>
+              <h1>Press</h1>
+            </div>
+          </div>
+          <div class="More flex flex-col gap-6">
+            <h1>More</h1>
+            <div>
+              <h1>Program</h1>
+              <h1>Plan</h1>
+              <h1>Method</h1>
+            </div>
+          </div>
+          <div class="popular flex flex-col gap-6">
+            <h1>Popular Tags</h1>
+            <div class="Tags grid grid-cols-3 gap-4">
+              <button class="bg-[#FFFFFF80] py-1 px-2">Abs</button>
+              <button class="bg-[#FFFFFF80] py-1 px-2">Workout</button>
+              <button class="bg-[#FFFFFF80] py-1 px-2">Nutrition</button>
+              <button class="bg-[#FFFFFF80] py-1 px-2">Boxing</button>
+              <button class="bg-[#FFFFFF80] py-1 px-2">Gym</button>
+              <button
+                class="bg-gradient-to-r from-[#F66844] to-[#FF921B] px-2 py-1"
+              >
+                Facilities
+              </button>
+              <button class="bg-[#FFFFFF80] py-1 px-2">Plans</button>
+              <button class="bg-[#FFFFFF80] py-1 px-2">Trainers</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
